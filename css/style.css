@@ -49,7 +49,6 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   min-height: 80px;
-  border: 1px solid #ffaaee;
 }
 
 .navbar__contact {
@@ -114,5 +113,21 @@ body {
   display: block;
   font-size: 14px;
   color: #7b7b7b;
+}
+
+.hero {
+  background: url("../img/hero_bg.jpg") no-repeat center right, -webkit-gradient(linear, right top, left top, from(#ffffff), to(rgba(221, 221, 221, 0.4)));
+  background: url("../img/hero_bg.jpg") no-repeat center right, linear-gradient(to left, #ffffff, rgba(221, 221, 221, 0.4));
+  padding-top: 201px;
+  padding-bottom: 270px;
+}
+
+.hero__title {
+  font-size: 30px;
+}
+
+.hero_subtitle {
+  font-size: 30px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
