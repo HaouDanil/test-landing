@@ -8,6 +8,25 @@
   margin: auto;
 }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 781px) {
+  .container {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+}
+
 @font-face {
   font-family: 'Proxima Nova Light';
   src: url("../fonts/ProximaNova-Light.eot");
@@ -54,6 +73,7 @@ body {
   left: 0;
   width: 100%;
   background: #fff;
+  z-index: 5;
 }
 
 .navbar__wrapper {
@@ -95,12 +115,21 @@ body {
   width: 100%;
   padding: 16px 0;
   background-color: #507fe1;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .menu__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -110,7 +139,7 @@ body {
   text-decoration: none;
   font-size: 17px;
   text-transform: uppercase;
-  color: #262626;
+  color: #fff;
 }
 
 .menu-btn {
@@ -157,9 +186,27 @@ body {
   color: #7b7b7b;
 }
 
+@media (max-width: 781px) {
+  .navbar__contact {
+    text-align: right;
+    display: none;
+  }
+}
+
+@media (max-width: 485px) {
+  .logo__text {
+    font-size: 14px;
+  }
+  .logo__description {
+    font-size: 10px;
+    color: #7b7b7b;
+  }
+}
+
 .hero {
-  background: url("../img/hero_bg.jpg") no-repeat center right, -webkit-gradient(linear, right top, left top, from(#ffffff), to(rgba(221, 221, 221, 0.4)));
-  background: url("../img/hero_bg.jpg") no-repeat center right, linear-gradient(to left, #ffffff, rgba(221, 221, 221, 0.4));
+  background: url("../img/hero_bg.jpg") no-repeat top right, -webkit-gradient(linear, right top, left top, from(#ffffff), to(rgba(221, 221, 221, 0.4)));
+  background: url("../img/hero_bg.jpg") no-repeat top right, linear-gradient(to left, #ffffff, rgba(221, 221, 221, 0.4));
+  background-size: contain;
   margin-top: 80px;
 }
 
