@@ -23,7 +23,7 @@
 @media (max-width: 781px) {
   .container {
     max-width: 100%;
-    padding: 0 30px;
+    padding: 0 20px;
   }
 }
 
@@ -67,6 +67,27 @@ body {
   font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
+@media (max-width: 781px) {
+  .button {
+    padding: 16px 40px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 485px) {
+  .button {
+    padding: 10px 30px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 361px) {
+  .button {
+    padding: 10px 26px;
+    font-size: 10px;
+  }
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -85,7 +106,7 @@ body {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  min-height: 80px;
+  min-height: 60px;
 }
 
 .navbar__contact {
@@ -115,8 +136,8 @@ body {
   width: 100%;
   padding: 16px 0;
   background-color: #507fe1;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
@@ -169,7 +190,7 @@ body {
   margin: 2px 0;
   width: 20px;
   height: 3px;
-  background-color: #89a9eb;
+  background-color: #507fe1;
 }
 
 .logo__text {
@@ -195,19 +216,62 @@ body {
 
 @media (max-width: 485px) {
   .logo__text {
-    font-size: 14px;
+    font-size: 12px;
   }
   .logo__description {
     font-size: 10px;
     color: #7b7b7b;
   }
+  .navbar__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar__btn {
+    font-size: 10px;
+    padding: 10px 16px;
+  }
+  .menu {
+    top: 60px;
+    width: 50%;
+  }
+  .menu__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .menu__link {
+    font-size: 10px;
+    padding: 1vh 0;
+  }
+  .menu-btn {
+    border-right: 0.5px solid rgba(81, 11, 186, 0.1);
+    border-left: 0.5px solid rgba(81, 11, 186, 0.1);
+    height: 60px;
+    width: 50px;
+  }
+  .menu-btn__line {
+    display: block;
+    margin: 2px 0;
+    width: 14px;
+    height: 2px;
+    background-color: #507fe1;
+  }
 }
 
 .hero {
-  background: url("../img/hero_bg.jpg") no-repeat top right, -webkit-gradient(linear, right top, left top, from(#ffffff), to(rgba(221, 221, 221, 0.4)));
-  background: url("../img/hero_bg.jpg") no-repeat top right, linear-gradient(to left, #ffffff, rgba(221, 221, 221, 0.4));
-  background-size: contain;
-  margin-top: 80px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#ffffff), to(rgba(221, 221, 221, 0.4)));
+  background-image: linear-gradient(to left, #ffffff, rgba(221, 221, 221, 0.4));
 }
 
 .hero__wrapper {
@@ -225,6 +289,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 611px;
+  background: url("../img/hero_bg.jpg") no-repeat top right;
+  background-size: contain;
+  margin-top: 80px;
 }
 
 .hero__title {
@@ -236,5 +303,60 @@ body {
   margin-bottom: 40px;
   font-size: 30px;
   font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+@media (max-width: 991px) {
+  .hero__wrapper {
+    height: 411px;
+  }
+}
+
+@media (max-width: 781px) {
+  .hero__wrapper {
+    height: 311px;
+  }
+  .hero__title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .hero__subtitle {
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-family: 'Proxima Nova Semibold', sans-serif;
+  }
+}
+
+@media (max-width: 485px) {
+  .hero__wrapper {
+    height: 211px;
+    background: url("../img/hero_bg_small.jpg") no-repeat top right;
+    background-size: initial;
+    margin-top: 60px;
+  }
+  .hero__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .hero__subtitle {
+    margin-bottom: 32px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 376px) {
+  .hero__wrapper {
+    height: 211px;
+    background: url("../img/hero_bg_smallest.jpg") no-repeat top right;
+    background-size: initial;
+    margin-top: 60px;
+  }
+  .hero__title {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  .hero__subtitle {
+    margin-bottom: 22px;
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
