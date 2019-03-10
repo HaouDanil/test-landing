@@ -33,7 +33,11 @@
   padding: 16px 0
   background-color: $ambient 
   transform: translateY(-150%)
-  transition: transform 1s
+  opacity: 0
+  &__active
+    transform: translateY(0)
+    opacity: 1
+    display: none
   &__nav
     display: flex
     align-items: center
