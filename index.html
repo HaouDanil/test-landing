@@ -2,65 +2,121 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Test landing</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Test landing</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <header class="header">
-        <div class="navbar">
-            <div class="navbar__wrapper container">
-                <button class="menu-btn navbar__menu-btn">
-                    <span class="menu-btn__line"></span>
-                    <span class="menu-btn__line"></span>
-                    <span class="menu-btn__line"></span>
-                </button>
-                <div class="logo navbar__logo">
-                    <strong class="logo__text">Kitchenette</strong>
-                    <span class="logo__description">leading kitchen furniture</span>
-                </div>
-                <div class="navbar__contact">
-                    <a href="tel:+71119097007" class="navbar__phone">+7 &#40;111&#41; 909-70-07</a>
-                    <span class="navbar__worktime">Monday-Friday, 8AM - 8PM</span>
-                </div>
-                <div class="navbar__contact">
-                    <a href="tel:+71117770000" class="navbar__phone">+7 &#40;111&#41; 777-00-00</a>
-                    <a href="mailto:info@mail.cu" class="navbar__email">info@mail.cu</a>
-                </div>
-                <button class="navbar__btn">Get a consultation</button>
-            </div>
+  <header class="header">
+    <div class="navbar">
+      <div class="navbar__wrapper container">
+        <button class="menu-btn navbar__menu-btn">
+          <span class="menu-btn__line"></span>
+          <span class="menu-btn__line"></span>
+          <span class="menu-btn__line"></span>
+        </button>
+        <div class="logo navbar__logo">
+          <strong class="logo__text">Kitchenette</strong>
+          <span class="logo__description">leading kitchen furniture</span>
         </div>
-        <!-- navbar-wrapper -->
-        <div class="menu menu__active">
-                <div class="menu__wrapper container">
-                    <nav class="menu__nav">
-                        <a href="#" class="menu__link">Main</a>
-                        <a href="#" class="menu__link">Production</a>
-                        <a href="#" class="menu__link">Catalog</a>
-                        <a href="#" class="menu__link">Work examples</a>
-                        <a href="#" class="menu__link">Fit an image</a>
-                        <a href="#" class="menu__link">Price</a>
-                        <a href="#" class="menu__link">About kitchenette</a>
-                    </nav>
-                </div>
-            </div>
-        <div class="hero">
-            <div class="container hero__wrapper">
-                <h1 class="hero__title">
-                        Guarantee of <br>minimum prices <br>on kitchenette
-                </h1>
-                <span class="hero__subtitle">from 500&#36; per m<sup>2<sup></sup></span>
-                <button class="button hero__button">shop now</button>
-            </div>
+        <div class="navbar__contact">
+          <a href="tel:+71119097007" class="navbar__phone">+7 &#40;111&#41; 909-70-07</a>
+          <span class="navbar__worktime">Monday-Friday, 8AM - 8PM</span>
         </div>
-    </header>
+        <div class="navbar__contact">
+          <a href="tel:+71117770000" class="navbar__phone">+7 &#40;111&#41; 777-00-00</a>
+          <a href="mailto:info@mail.cu" class="navbar__email">info@mail.cu</a>
+        </div>
+        <button class="navbar__btn">Get a consultation</button>
+      </div>
+    </div>
+    <!-- navbar-wrapper -->
+    <div class="menu menu__active">
+      <div class="menu__wrapper container">
+        <nav class="menu__nav">
+          <a href="#" class="menu__link">Main</a>
+          <a href="#" class="menu__link">Production</a>
+          <a href="#" class="menu__link">Catalog</a>
+          <a href="#" class="menu__link">Work examples</a>
+          <a href="#" class="menu__link">Fit an image</a>
+          <a href="#" class="menu__link">Price</a>
+          <a href="#" class="menu__link">About kitchenette</a>
+        </nav>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="container hero__wrapper">
+        <h1 class="hero__title">
+          Guarantee of <br>minimum prices <br>on kitchenette
+        </h1>
+        <span class="hero__subtitle">from 500&#36; per m<sup>2<sup></sup></span>
+        <button class="button hero__button">shop now</button>
+      </div>
+    </div>
+  </header>
 
-<!-- Embed button of socials feedback "Spikmi" -->
-<script type="text/javascript" src="https://spikmi.com/Widget?Id=355"></script>
+  <main>
+    <section class="offer bgc">
+      <div class="container">
+        <div class="offer__block offer-block">
+          <h2 class="offer-block__title">Leave a request for estimation</h2>
+          <span class="offer-block__subtitle">and get a 30% discount on kitchenette
+             production or apron for kitchen</span>
+          <form action="#" class="form offer__form">
+            <div class="form__row">
+              <div class="form__unit">
+                <label for="" class="form__label">Type of glass</label>
+                <input type="text" class="form__input">
+              </div>
+              <div class="form__unit">
+                <label for="" class="form__label">Width, sm</label>
+                <input type="text" class="form__input">
+              </div>
+              <div class="form__unit">
+                <label for="" class="form__label">High, sm</label>
+                <input type="text" class="form__input">
+              </div>
+            </div>
+            <!-- form__row 1 -->
+            <div class="form__row form__row-checkbox">
+              <div class="form__checkbox">
+                <input class="checkbox" id="assembly" type="checkbox">
+                <label class="checkbox-label" for="assembly" class="form__label">
+                  Assembly
+                </label>
+              </div>
+              <div class="form__checkbox">
+                <input class="checkbox" id="delivery" type="checkbox">
+                <label class="checkbox-label" for="delivery" class="form__label">
+                  Delivery
+                </label>
+              </div>
+            </div>
+            <!-- form__row 2 -->
+            <div class="form__row">
+              <div class="form__unit">
+                <input type="text" class="form__input" placeholder="Your name">
+              </div>
+              <div class="form__unit">
+                <input type="text" class="form__input" placeholder="Your phone">
+              </div>
+              <div class="form__unit">
+                <input type="submit" class="button form__button" value="GET A DISCOUT">
+              </div>
+            </div>
+            <!-- form__row 3 -->
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Embed button of socials feedback "Spikmi" -->
+  <script type="text/javascript" src="https://spikmi.com/Widget?Id=355"></script>
 </body>
 
 </html>

@@ -19,6 +19,31 @@ body
   color: #fff
   +bold
 
+.bgc
+  background-color: $bgc
+
+.form__input
+  height: 80px
+  padding: 30px
+  border: 1px solid #ddd 
+
+.checkbox
+  display: none
+  &:checked + label:before
+    background-color: $ambient
+  &-label
+    display: flex
+    align-items: center
+    margin-right: 40px
+    cursor: pointer
+    &:before
+      content: ''
+      width: 30px
+      height: 30px
+      border: 1px solid #ddd
+      margin-right: 20px
+  
+  
 @media (max-width: 781px)
   .button
     padding: 16px 40px
