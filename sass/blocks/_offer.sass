@@ -1,5 +1,4 @@
 .offer
-  padding: 75px 0
   &-block
     background-color: #fff
     box-shadow: 0 15px 25px rgba(0, 0, 0, .1)
@@ -49,12 +48,17 @@
         flex-direction: row
     &__unit
       flex-basis: 100%
-      width: 100%
+      width: 100% 
     &__input
       margin-bottom: 20px
+      border-right-width: 1px
 @media (max-width: 485px)
   .offer-block
     &__title
       font-size: 18px
     &__subtitle
       font-size: 16px
+  .form
+    &__row
+      &-checkbox
+        justify-content: flex-start

@@ -1,7 +1,15 @@
 body 
   +light
   color: text-color
-
+.section
+  padding: 100px 0
+  &-title
+    text-align: center
+    text-transform: uppercase
+    +bold
+  &__title
+    margin-top: 0
+    margin-bottom: 80px
 .navbar__btn
   border: 2px solid $ambient
   color: $ambient
@@ -48,11 +56,20 @@ body
   .button
     padding: 16px 40px
     font-size: 14px
+  .section
+    &-title
+      font-size: 24px
 @media (max-width: 485px)
   .button
     padding: 10px 30px
     font-size: 12px
-@media (max-width: 361px)
+@media (max-width: 376px)
   .button
     padding: 10px 26px
     font-size: 10px
+  .section
+    &-title
+      font-size: 20px
+  .checkbox
+    &-label
+      margin-right: 10px
