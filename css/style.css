@@ -122,24 +122,36 @@ body {
 @media (max-width: 781px) {
   .button {
     padding: 16px 40px;
-    font-size: 14px;
+    font-size: 18px;
+  }
+  .section {
+    padding: 60px 0;
   }
   .section-title {
     font-size: 24px;
   }
+  .section__title {
+    margin-bottom: 60px;
+  }
 }
 
 @media (max-width: 485px) {
+  .section {
+    padding: 40px 0;
+  }
+  .section__title {
+    margin-bottom: 40px;
+  }
   .button {
     padding: 10px 30px;
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
 @media (max-width: 376px) {
   .button {
     padding: 10px 26px;
-    font-size: 10px;
+    font-size: 14px;
   }
   .section-title {
     font-size: 20px;
@@ -354,7 +366,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 611px;
-  background: url("../img/hero_bg.jpg") no-repeat top right;
+  background: url("../img/hero/hero_bg.jpg") no-repeat top right;
   background-size: contain;
   margin-top: 80px;
 }
@@ -394,7 +406,7 @@ body {
 @media (max-width: 485px) {
   .hero__wrapper {
     height: 211px;
-    background: url("../img/hero_bg_small.jpg") no-repeat top right;
+    background: url("../img/hero/hero_bg_small.jpg") no-repeat top right;
     background-size: initial;
     margin-top: 60px;
   }
@@ -411,7 +423,7 @@ body {
 @media (max-width: 376px) {
   .hero__wrapper {
     height: 211px;
-    background: url("../img/hero_bg_smallest.jpg") no-repeat top right;
+    background: url("../img/hero/hero_bg_smallest.jpg") no-repeat top right;
     background-size: initial;
     margin-top: 60px;
   }
@@ -489,9 +501,6 @@ body {
 }
 
 @media (max-width: 781px) {
-  .offer {
-    padding: 35px 0;
-  }
   .offer-block {
     padding: 30px;
   }
@@ -546,13 +555,21 @@ body {
   -ms-flex-preferred-size: 33.33%;
       flex-basis: 33.33%;
   text-align: center;
-  margin-bottom: 110px;
+  margin-bottom: 100px;
+}
+
+.features-block__item:nth-child(4), .features-block__item:nth-child(5), .features-block__item:last-child {
+  margin-bottom: 0;
 }
 
 @media (max-width: 781px) {
   .features-block__item {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+    margin-bottom: 60px;
+  }
+  .features-block__item:nth-child(5), .features-block__item:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -560,6 +577,13 @@ body {
   .features-block__item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    margin-bottom: 40px;
+  }
+  .features-block__item:nth-child(4), .features-block__item:nth-child(5) {
+    margin-bottom: 40px;
+  }
+  .features-block__item:last-child {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
