@@ -24,6 +24,14 @@
       display: flex
       bottom: 0
       right: 0
+  &__link
+    text-align: center
+    margin-top: 40px
+    &-button
+      display: inline-block
+      margin-bottom: 24px
+  &__description
+    display: block
 
 @media (max-width: 1199px)
   .catalog
@@ -33,18 +41,17 @@
   .catalog
     &-card
       max-width: 370px
+    &__link
+      margin-top: 30px
 @media (max-width: 781px)
   .catalog
     &-block
       justify-content: center
     &-card
       max-width: 570px
-@media (max-width: 485px)
-  .catalog
-    &-card
-      &__tag
-        padding: 5px
-        font-size: 10px
+    &__tag
+      padding: 5px
+      font-size: 10px
 @media (max-width: 485px)
   .catalog
     &-card
@@ -53,3 +60,7 @@
         left: 5px
         padding: 5px
         font-size: 8px
+    &__link
+      margin-top: 20px
+      &-button
+        margin-bottom: 14px
