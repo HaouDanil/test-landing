@@ -634,6 +634,10 @@ img {
   }
 }
 
+.catalog {
+  background-color: #f5f6f8;
+}
+
 .catalog-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -734,5 +738,26 @@ img {
   .catalog__link-button {
     margin-bottom: 14px;
   }
+}
+
+.blog__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog__title {
+  font-size: 24px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.blog__link {
+  color: #507fe1;
 }
 /*# sourceMappingURL=style.css.map */
