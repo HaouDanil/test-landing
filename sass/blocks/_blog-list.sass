@@ -3,9 +3,56 @@
     display: flex
     align-items: center
     justify-content: space-between
+    margin-bottom: 70px
   &__title
     font-size: 24px
     +bold
   &__link
     color: $ambient
-    
+    font-size: 16px
+  &-card
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .08)
+  &-list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    &__card
+      margin-bottom: 40px
+    &__image
+      height: 255px
+      overflow: hidden
+    &__text
+      display: flex
+      justify-content: center
+      align-items: center
+      min-height: 80px
+
+@media (max-width: 1199px)
+  .blog
+    &-list
+      justify-content: space-around
+      &__card
+        flex-basis: 220px
+      &__image
+        height: 180px
+        img
+          min-height: 180px
+@media (max-width: 991px)
+  .blog
+    &-list
+      justify-content: space-around
+      &__card
+        flex-basis: initial
+      &__image
+        height: 255px
+// @media (max-width: 781px)
+@media (max-width: 485px)
+  .blog
+    &-list
+      justify-content: space-around
+      &__card
+        flex-basis: 230px
+      &__image
+        height: 180px
+        img
+          min-height: 180px
