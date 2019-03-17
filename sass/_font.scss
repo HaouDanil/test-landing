@@ -24,3 +24,13 @@
 @mixin light {
   font-family: 'Proxima Nova Light', sans-serif;  
 }
+// @mixin tablet {
+//   @media screen and (max-width: 1199px) {
+//     @content;
+//   }
+// }
+// @include tablet {
+//   .container {
+//     max-width: 960px
+//   }
+// }

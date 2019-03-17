@@ -78,7 +78,7 @@ img {
 }
 
 .button {
-  padding: 20px 75px;
+  padding: 20px 65px;
   text-transform: uppercase;
   border: none;
   background-color: #507fe1;
@@ -847,5 +847,16 @@ img {
   .blog-list__image img {
     min-height: 180px;
   }
+}
+
+.price-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=style.css.map */
