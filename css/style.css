@@ -72,19 +72,23 @@ img {
   color: #507fe1;
   background-color: #ffffff;
   padding: 17px 22px;
-  font-size: 12px;
+  font-size: 14px;
   font-family: 'Proxima Nova Semibold', sans-serif;
   text-transform: uppercase;
 }
 
 .button {
-  padding: 20px 65px;
+  padding: 20px 55px;
   text-transform: uppercase;
   border: none;
   background-color: #507fe1;
   color: #fff;
   text-decoration: none;
   font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.button:hover {
+  cursor: pointer;
 }
 
 .button-fit {
@@ -337,10 +341,10 @@ img {
 
 @media (max-width: 485px) {
   .logo__text {
-    font-size: 12px;
+    font-size: 16px;
   }
   .logo__description {
-    font-size: 10px;
+    font-size: 12px;
     color: #7b7b7b;
   }
   .navbar__wrapper {
@@ -355,8 +359,8 @@ img {
             justify-content: space-between;
   }
   .navbar__btn {
-    font-size: 10px;
-    padding: 10px 16px;
+    font-size: 12px;
+    padding: 16px 2px;
   }
   .menu {
     top: 60px;
@@ -581,10 +585,22 @@ img {
   .offer-block__subtitle {
     font-size: 16px;
   }
-  .form__row-checkbox {
+  .form__checkbox {
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  .form__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .form__row:first-child {
+    margin-bottom: 0;
+  }
+  .form__input-checkbox {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-bottom: 15px;
   }
 }
 
@@ -858,5 +874,95 @@ img {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.price-block__card {
+  margin-bottom: 20px;
+}
+
+.price-card {
+  position: relative;
+  background-color: #fff;
+}
+
+.price-card__text {
+  padding: 20px;
+  font-size: 15px;
+}
+
+.price-card__pricetag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price-card__title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.price-card__cost {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.price-card__button {
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  height: 80px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.price-card:hover .price-card__button {
+  z-index: 99;
+  bottom: -80px;
+}
+
+@media (max-width: 1199px) {
+  .price-block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .price-block__card {
+    -ms-flex-preferred-size: 220px;
+        flex-basis: 220px;
+  }
+}
+
+@media (max-width: 991px) {
+  .price-block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .price-block__card {
+    -ms-flex-preferred-size: initial;
+        flex-basis: initial;
+  }
+}
+
+@media (max-width: 485px) {
+  .price-block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .price-block__card {
+    -ms-flex-preferred-size: 230px;
+        flex-basis: 230px;
+  }
+  .price-block__image {
+    height: 180px;
+  }
+  .price-block__image img {
+    min-height: 180px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
