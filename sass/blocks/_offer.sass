@@ -1,8 +1,10 @@
 .offer
+  padding-top: 0
   &-block
     background-color: #fff
     box-shadow: 0 15px 25px rgba(0, 0, 0, .1)
     padding: 60px
+    margin-top: -200px
     &__title
       font-size: 25px
       text-transform: uppercase
@@ -35,7 +37,18 @@
   &__button
     height: 80px
     width: 100%
+  &__policy
+    display: inline-block
+    margin-left: 45px
+    font-size: 17px
+    width: 350px
     
+@media (max-width: 991px)
+  .form
+    &__policy
+      display: block
+      margin-left: 25px
+      font-size: 17px
 @media (max-width: 781px)
   .offer
     &-block
@@ -51,6 +64,12 @@
     &__input
       margin-bottom: 20px
       border-right-width: 1px
+    &__policy
+      display: block
+      text-align: center
+      margin: 25px auto 0
+      font-size: 17px
+      width: 100%
 @media (max-width: 485px)
   .offer-block
     &__title
