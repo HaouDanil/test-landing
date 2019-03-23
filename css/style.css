@@ -492,16 +492,11 @@ img {
   }
 }
 
-.offer {
-  padding-top: 0;
-}
-
 .offer-block {
   background-color: #fff;
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   padding: 60px;
-  margin-top: -200px;
 }
 
 .offer-block__title {
@@ -515,6 +510,14 @@ img {
   display: block;
   margin-bottom: 48px;
   font-size: 20px;
+}
+
+.offer2 {
+  padding-top: 0;
+}
+
+.offer2-block {
+  margin-top: -200px;
 }
 
 .form__row {
