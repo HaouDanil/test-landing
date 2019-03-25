@@ -18,7 +18,8 @@
         "../sass/blocks/_reviews.sass",
         "../sass/blocks/_production.sass",
         "../sass/blocks/_contacts.sass",
-        "../sass/blocks/_questions.sass"
+        "../sass/blocks/_questions.sass",
+        "../sass/blocks/_footer.sass"
     ],
     "names": [],
     "file": "style.css"
