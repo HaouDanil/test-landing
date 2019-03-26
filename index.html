@@ -8,6 +8,7 @@
   <title>Test landing</title>
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/twentytwenty.css">
 </head>
 
 <body>
@@ -429,6 +430,50 @@
     </section>
     <!-- section steps end-->
 
+    <section class="section before">
+      <div class="container">
+        <h2 class="section-title section__title">Before and after</h2>
+        <div class="before-slider-wrap">
+          <div class="before-slider">
+            <div class="before-slider__item">
+              <div class="before-after">
+                <img src="img/before-slider/sample-before.png" alt="">
+                <img src="img/before-slider/sample-after.png" alt="">
+              </div>
+            </div>
+            <!-- before-slider__item 1 end-->
+            <div class="before-slider__item">
+              <div class="before-after">
+                <img src="img/before-slider/sample-before.png" alt="">
+                <img src="img/before-slider/sample-after.png" alt="">
+              </div>
+            </div>
+            <!-- before-slider__item 2 end-->
+            <div class="before-slider__item">
+              <div class="before-after">
+                <img src="img/before-slider/sample-before.png" alt="">
+                <img src="img/before-slider/sample-after.png" alt="">
+              </div>
+            </div>
+            <!-- before-slider__item 3 end-->
+          </div>
+          <!-- before-slider end-->
+          <div class="before-slider-arrows">
+            </button>
+            <button class="arrow arrow-left">
+              <img src="img/before-slider/arrow-2.png" alt="">
+            <button class="arrow arrow-right">
+                <img src="img/before-slider/arrow-1.png" alt="">
+            </button>
+          </div>
+          <!-- before-slider-arrows end-->
+        </div>
+        <!-- before-slider-wrap end-->
+      </div>
+      <!-- container end-->
+    </section>
+    <!-- section before end-->
+
     <section class="section reviews bgc2">
       <div class="container">
         <h2 class="section-title section__title">Reviews our client</h2>
@@ -607,6 +652,22 @@
 
   <!-- Embed button of socials feedback "Spikmi" -->
   <script type="text/javascript" src="https://spikmi.com/Widget?Id=355"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
+  <script src="js/jquery.event.move.js"></script> 
+  <script src="js/jquery.twentytwenty.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script>
+    $(window).load(function() {
+      $(".before-after").twentytwenty({
+      before_label: 'Witout kitchenette',
+      after_label: 'With kitchenette'
+      });
+      $('.before-slider').slick({
+        draggable: false,
+        dots: true
+      });
+    });
+</script>
 </body>
 
 </html>
