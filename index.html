@@ -13,31 +13,8 @@
 
 <body>
   <header class="header">
-    <div class="navbar">
-      <div class="navbar__wrapper container">
-        <button class="menu-btn navbar__menu-btn">
-          <span class="menu-btn__line"></span>
-          <span class="menu-btn__line"></span>
-          <span class="menu-btn__line"></span>
-        </button>
-        <div class="logo navbar__logo">
-          <strong class="logo__text">Kitchenette</strong>
-          <span class="logo__description">leading kitchen furniture manufacturer</span>
-        </div>
-        <div class="navbar__contact">
-          <a href="tel:+71119097007" class="navbar__phone">+7 &#40;111&#41; 909-70-07</a>
-          <span class="navbar__worktime">Monday-Friday, 8AM - 8PM</span>
-        </div>
-        <div class="navbar__contact">
-          <a href="tel:+71117770000" class="navbar__phone">+7 &#40;111&#41; 777-00-00</a>
-          <a href="mailto:info@mail.cu" class="navbar__email">info@mail.cu</a>
-        </div>
-        <button class="navbar__btn">Get a consultation</button>
-      </div>
-    </div>
-    <!-- navbar-wrapper -->
-    <div class="menu menu__active">
-      <div class="menu__wrapper container">
+    <div class="menu ">
+      <div class="container">
         <nav class="menu__nav">
           <a href="#" class="menu__link">Main</a>
           <a href="#" class="menu__link">Production</a>
@@ -49,6 +26,31 @@
         </nav>
       </div>
     </div>
+    <div class="navbar">
+      <div class="container">
+        <div class="navbar__wrapper">
+          <button class="menu-btn navbar__menu-btn">
+            <span class="menu-btn__line"></span>
+            <span class="menu-btn__line"></span>
+            <span class="menu-btn__line"></span>
+          </button>
+          <div class="logo navbar__logo">
+            <strong class="logo__text">Kitchenette</strong>
+            <span class="logo__description">leading kitchen furniture manufacturer</span>
+          </div>
+          <div class="navbar__contact">
+            <a href="tel:+71119097007" class="navbar__phone">+7 &#40;111&#41; 909-70-07</a>
+            <span class="navbar__worktime">Monday-Friday, 8AM - 8PM</span>
+          </div>
+          <div class="navbar__contact">
+            <a href="tel:+71117770000" class="navbar__phone">+7 &#40;111&#41; 777-00-00</a>
+            <a href="mailto:info@mail.cu" class="navbar__email">info@mail.cu</a>
+          </div>
+          <button class="navbar__btn">Get a consultation</button>
+        </div>
+      </div>
+    </div>
+    <!-- navbar-wrapper -->
     <div class="hero">
       <div class="container hero__wrapper">
         <h1 class="hero__title">
@@ -71,7 +73,14 @@
             <div class="form__row">
               <div class="form__unit">
                 <label for="" class="form__label">Type of glass</label>
-                <input type="text" class="form__input">
+                <input type="hidden" class="form__input" name="glass">
+                <div class="select form__select">
+                  <div class="select__checked">With print</div>
+                  <ul class="select_dropdown">
+                    <li>With print</li>
+                    <li>Without print</li>
+                  </ul>
+                </div>
               </div>
               <div class="form__unit">
                 <label for="" class="form__label">Width, sm</label>
@@ -664,7 +673,13 @@
       });
       $('.before-slider').slick({
         draggable: false,
-        dots: true
+        dots: true,
+        dotsClass:'before-slider__dots',
+        prevArrow:$(".arrow-left"),
+        nextArrow:$(".arrow-right")
+      });
+      $('.navbar__menu-btn').on('click', function(){
+        $('.menu').toggleClass('menu_active');
       });
     });
 </script>
