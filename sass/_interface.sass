@@ -59,16 +59,51 @@ img
   height: 80px
   padding: 30px
   border: 1px solid #ddd 
-
-.checkbox
+input[type="checkbox"]
   display: none
   &:checked + label:before
     background-color: $ambient
+.select
+  height: 80px
+  width: 100%
+  border: 1px solid #ddd 
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    top: 50%
+    right: 20px
+    transform: translateY(-50%)
+    width: 20px
+    height: 10px
+    background: url('../img/before-slider/arrow-down.png') no-repeat center
+  &:hover
+    cursor: pointer
+  &__checked
+    line-height: 80px
+    padding-left: 30px
+  &__dropdown
+    position: absolute
+    margin: 0
+    padding: 0
+    top: 80px
+    width: 100%
+    background-color: #fff
+    border: 1px solid #ddd 
+    list-style: none
+  &__option
+    padding: 20px
+    &:hover
+      background-color: $bgc
+      cursor: pointer
+.checkbox
   &-label
     display: flex
     align-items: center
     margin-right: 40px
     cursor: pointer
+    &:hover
+      cursor: pointer
     &:before
       content: ''
       width: 30px
