@@ -272,11 +272,17 @@ input[type="checkbox"]:checked + label:before {
   position: absolute;
   margin: 0;
   padding: 0;
-  top: 80px;
+  top: 79px;
   width: 100%;
   background-color: #fff;
   border: 1px solid #ddd;
+  border-top: none;
   list-style: none;
+  display: none;
+}
+
+.select__dropdown_open {
+  display: block;
 }
 
 .select__option {
@@ -373,7 +379,7 @@ input[type="checkbox"]:checked + label:before {
   left: 0;
   width: 100%;
   background: #fff;
-  z-index: 5;
+  z-index: 99;
 }
 
 .navbar__wrapper {
@@ -408,6 +414,10 @@ input[type="checkbox"]:checked + label:before {
   color: #7b7b7b;
 }
 
+.navbar__btn {
+  text-decoration: none;
+}
+
 .menu {
   position: fixed;
   top: 80px;
@@ -424,6 +434,7 @@ input[type="checkbox"]:checked + label:before {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
+  z-index: 99;
 }
 
 .menu__nav {
@@ -1134,7 +1145,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .price-card:hover .price-card__button {
-  z-index: 99;
+  z-index: 95;
   bottom: -80px;
 }
 
@@ -1258,7 +1269,7 @@ input[type="checkbox"]:checked + label:before {
   max-width: 640px;
   margin: auto;
   position: relative;
-  z-index: 99;
+  z-index: 98;
 }
 
 .before-slider-arrows {

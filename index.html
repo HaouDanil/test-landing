@@ -17,7 +17,7 @@
       <div class="container">
         <nav class="menu__nav">
           <a href="#" class="menu__link">Main</a>
-          <a href="#" class="menu__link">Production</a>
+          <a href="#features" class="menu__link">Benefits</a>
           <a href="#" class="menu__link">Catalog</a>
           <a href="#" class="menu__link">Work examples</a>
           <a href="#" class="menu__link">Fit an image</a>
@@ -46,7 +46,7 @@
             <a href="tel:+71117770000" class="navbar__phone">+7 &#40;111&#41; 777-00-00</a>
             <a href="mailto:info@mail.cu" class="navbar__email">info@mail.cu</a>
           </div>
-          <button class="navbar__btn">Get a consultation</button>
+          <a href="#offer" class="navbar__btn">Get a consultation</a>
         </div>
       </div>
     </div>
@@ -63,7 +63,7 @@
   </header>
 
   <main>
-    <section class="offer bgc section">
+    <section class="offer bgc section" id="offer">
       <div class="container">
         <div class="offer-block">
           <h2 class="offer-block__title">Leave a request for estimation</h2>
@@ -73,22 +73,22 @@
             <div class="form__row">
               <div class="form__unit">
                 <label for="" class="form__label">Type of glass</label>
-                <input type="hidden" class="form__input" name="glass">
+                <input type="hidden" class="form__input" name="glass" value="With print" id="select-type">
                 <div class="select form__select">
                   <div class="select__checked">With print</div>
                   <ul class="select__dropdown">
-                    <li class ="select__option">With print</li>
-                    <li class ="select__option">Without print</li>
+                    <li class ="select__option" data-value="With print">With print</li>
+                    <li class ="select__option" data-value="Without print">Without print</li>
                   </ul>
                 </div>
               </div>
               <div class="form__unit">
                 <label for="" class="form__label">Width, sm</label>
-                <input type="text" class="form__input">
+                <input type="number" class="form__input">
               </div>
               <div class="form__unit">
                 <label for="" class="form__label">High, sm</label>
-                <input type="text" class="form__input">
+                <input type="number" class="form__input">
               </div>
             </div>
             <!-- form__row 1 -->
@@ -112,7 +112,7 @@
                 <input type="text" class="form__input" placeholder="Your name">
               </div>
               <div class="form__unit">
-                <input type="text" class="form__input" placeholder="Your phone">
+                <input type="tel" class="form__input" placeholder="Your phone">
               </div>
               <div class="form__unit">
                 <input type="submit" class="button form__button" value="GET A DISCOUT">
@@ -125,7 +125,7 @@
     </section>
     <!-- offer section end -->
 
-    <section class="features section">
+    <section class="features section" id="features">
       <div class="container">
         <h2 class="section-title section__title">Our benefits</h2>
         <div class="features-block">
@@ -529,7 +529,7 @@
                 <input type="text" class="form__input" placeholder="Your name">
               </div>
               <div class="form__unit">
-                <input type="text" class="form__input" placeholder="Your name">
+                <input type="tel" class="form__input" placeholder="Your phone">
               </div>
               <div class="form__unit">
                 <input type="text" class="form__input" placeholder="Your price">
@@ -665,24 +665,8 @@
   <script src="js/jquery.event.move.js"></script> 
   <script src="js/jquery.twentytwenty.js"></script>
   <script src="js/slick.min.js"></script>
-  <script>
-    $(window).load(function() {
-      $(".before-after").twentytwenty({
-      before_label: 'Witout kitchenette',
-      after_label: 'With kitchenette'
-      });
-      $('.before-slider').slick({
-        draggable: false,
-        dots: true,
-        dotsClass:'before-slider__dots',
-        prevArrow:$(".arrow-left"),
-        nextArrow:$(".arrow-right")
-      });
-      $('.navbar__menu-btn').on('click', function(){
-        $('.menu').toggleClass('menu_active');
-      });
-    });
-</script>
+  <script src="js/main.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
 </body>
 
 </html>
